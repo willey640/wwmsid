@@ -3,80 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>What Would My Scuba Instructor Do?</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <style>
-
-
-
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
+            text-align: center;
         }
 
         .banner {
             background-color: #00112D;
             color: white;
             padding: 15px;
-            margin: 0;
-            width: 100%;
             text-align: center;
+            width: 100%;
         }
 
-
-        nav {
-            width: 200px;
-            background-color: #ff0000; /* Set nav pane to red */
-            padding: 20px;
-            height: 100vh;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            left: 0;
-            top: 0;
-
-        }
-        nav h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: black; /* Ensure headings are readable */
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            background-color: #ff0000;
+            padding: 10px;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin-bottom: 10px;
-        }
-
-        nav ul li a {
+        .nav-container a {
+            color: white;
             text-decoration: none;
-            color: white; /* Change link color to white for contrast */
+            padding: 10px 15px;
         }
 
-        nav ul li a:hover {
+        .nav-container a:hover {
             text-decoration: underline;
         }
 
         .content-container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
             padding: 20px;
-            width: calc(100% - 220px); /* Adjust for the navigation width */
-            margin-left: 220px; /* Offset by the width of the nav */
-            box-sizing: border-box;
-        }
-
-        .content {
             max-width: 800px;
-            width: 100%;
+            margin: auto;
         }
 
         section {
@@ -84,14 +49,11 @@
             padding: 15px;
             border: 1px solid #ddd;
             border-radius: 10px;
-            width: 100%;
-            text-align: center; /* Center text and image */
         }
 
         img {
             max-width: 100%;
             height: auto;
-            margin: 20px 0;
         }
 
         .button {
@@ -110,20 +72,47 @@
     </style>
 </head>
 <body>
-    <nav>
-        <h2>Navigation</h2>
-        <ul>
-            <li><a href="me.html">Go to About Page</a></li>
-            <li><a href="side.html">Shop</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="store.html">store</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="/Photos/index2.html">test</a></li>
+    <h1 class="banner">What Would My Scuba Instructor Do?</h1>
+    
+    <nav class="nav-container">
+        <a href="me.html">About</a>
+        <a href="side.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="about.html">More About</a>
+        <a href="/Photos/index2.html">Gallery</a>
+    </nav>
 
-        </ul>
 
-        <img src="circle_logo.png">
+    
+    <div class="content-container">
+        <h2 class="banner">News</h2>
+        <section>
+            <p><strong>WWMSID: The second and final book is being written now and is planned to be available in 2025!</strong></p>
+            <p><strong>WWMSID Crypto Tokens: WWMSID Tokens are available on Solana. <a href="crypto.html">Click Here</a> to find out more</strong></p>
+        
+        </section>
+        <h2>Written by Christopher Willey</h2>
+        <section>
+            <h3>Get your own copy</h3>
+            <img src="https://m.media-amazon.com/images/W/AVIF_800250-T1/images/I/71DQA4bdsIL._SY466_.jpg" alt="Book Cover"/>
+            <br>
+            <a href="https://www.audible.ca/pd/What-Would-My-Scuba-Instructor-Do-Audiobook/B099WCHRFC" class="button">Buy on Audible</a>
+            <a href="https://www.amazon.ca/What-Would-My-Scuba-Instructor-ebook/dp/B08QG22KCZ" class="button">Buy on Amazon</a>
+        </section>
+        <section>
+            <h3>Formats Available</h3>
+            <p>Ebook <br>Audio Book<br> Paperback</p>
+        </section>
+        <section>
+            <h3>Book Summary</h3>
+            <p>Have you ever wondered what goes on behind the scenes of a Dive Shop or what it takes to become and work as a Scuba Diving Professional? This book is great for those who enjoy dive stories, jokes, and practical advice.</p>
+        </section>
+        <h2 class="banner">Upcoming News</h2>
+        <section>
+            <p><strong>WWMSID: The second book will be available in 2025!</strong></p>
+        </section>
         <h2>External Links about me</h2>
         <ul>
             <li><a href="https://www.divenewswire.com/lionfish-hunter-padi-specialty-course-highlights-safe-hunting-practices-on-roatan/">DiveWire Lionfish</a></li>
@@ -132,43 +121,6 @@
             <li><a href="https://www.divenewswire.com/fantasy-island-roatan-now-offers-advanced-padi-fish-id-specialty-course/">Divewire Advance Fish ID</a></li>
             <li><a href="https://payamag.com/2018/10/08/lionfish-pretty-but-dangerous-1/">Paya Magazine</a></li>
         </ul>
-
-    </nav>
-    <div class="content-container">
-        <div class="content">
-            <h1 class="banner">What Would My Scuba Instructor Do?</h1>
-            <h2>Written by Christopher Willey</h2>
-
-            <section>
-                <h3>Get your own copy</h3>
-                <img src="https://m.media-amazon.com/images/W/AVIF_800250-T1/images/I/71DQA4bdsIL._SY466_.jpg" alt="Cover of the book 'What Would My Scuba Instructor Do?' by Christopher Willey"/>
-                <br>
-                <a href="https://www.audible.ca/pd/What-Would-My-Scuba-Instructor-Do-Audiobook/B099WCHRFC" class="button">Buy on Audible</a>
-                <a href="https://www.amazon.ca/What-Would-My-Scuba-Instructor-ebook/dp/B08QG22KCZ" class="button">Buy on Amazon</a>
-            </section>
-
-            <section>
-                <h3>Formats Available</h3>
-                <p>Ebook <br>Audio Book<br> Paperback</p>
-            </section>
-
-            <section>
-                <h3>Book Summary</h3>
-                <p>Have you ever wondered what goes on behind the scenes of a Dive Shop or what it takes to become and work as a
-                Scuba Diving Professional? This book is great for those who enjoy dive stories, jokes, and practical advice.
-                Even if you have never dove before, you will find something in this audiobook that will spark your interest
-                in diving. I share my many experiences from first trying Scuba to finding a dive job in a tropical paradise.
-                I have learned so much since my first breath underwater and hope to share with you all of the tips that will
-                make you become the best diver you can be!</p>
-            </section>
-
-            <h2 class="banner">Upcoming News</h2>
-            <section>
-                <p><strong>WWMSID: The second book will be available in 2025!</strong> Stories that were not appropriate for new divers were removed
-                from the first book. The second book will hold back no punches towards the diving industry, featuring more stories and lessons learned.
-                It also includes the story of what ended my diving career. This book has a clear ending, and I am thankful that I was able to walk away from my injury.</p>
-            </section>
-        </div>
     </div>
 </body>
 </html>
