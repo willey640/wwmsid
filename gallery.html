@@ -1,46 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery - WWMSID</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasers It</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff0000;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            padding: 10px 15px;
+            text-align: center;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-  <header class="banner">
-    <h1>Welcome to the Gallery</h1>
-    <img src="Photos/red_logo.jpeg" alt="Logo" />
-  </header>
-  <nav class="nav-container">
-    <a href="index.html">Home</a>
-    <a href="store.html">Store</a>
-    <a href="aboutme.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-    <a href="crypto.html">Crypto</a>
-  </nav>
-  <div class="content-container">
+    <header>
+        <h1>Welcome to the Gallery</h1>
+        <div class="container">
+            <img src= "Photos/red_logo.jpeg" alt="New Logo">
+        </div>
+    
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="me.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
     <div class="hero">
-      <h1>Gallery</h1>
+        <h1>Gallery</h1>
     </div>
-    <section class="products">
-      <div class="product">
-        <img src="Gallery/1.JPG" alt="Dive Team" />
-        <p>Dive Team.</p>
-      </div>
-      <div class="product">
-        <img src="Gallery/2.jpg" alt="Lionfish Hunt with Pierre" />
-        <p>Lionfish Hunt with Pierre.</p>
-      </div>
-      <div class="product">
-        <img src="Gallery/3.jpg" alt="IDC Completed" />
-        <p>IDC Completed.</p>
-      </div>
-      <!-- Additional gallery items as needed -->
-    </section>
-  </div>
-  <footer>
-    <p>&copy; 2025 WWMSID. All Rights Reserved.</p>
-  </footer>
+    <div class="container">
+        <section id="products" class="products">
+            <div class="product">
+                <img src="Gallery/1.JPG" alt="Product 1">
+                <p>Dive Team.</p>
+            </div>
+            <div class="product">
+                <img src="Gallery/2.jpg" alt="Product 2">
+                <p>Lionfish Hunt with Pierre.</p>
+            </div>
+            <div class="product">
+                <img src="Gallery/3.jpg" alt="Product 3">
+                <p>IDC Completed</p>
+            </div>
+            <div class="product">
+                <img src="Gallery/4.JPG" alt="Product 3">
+                <p>Dive Briefing</p>
+            </div>
+            <div class="product">
+                <img src="Gallery/5.JPG" alt="Product 2">
+                <p>Dive Against Debris</p>
+            </div>
+            <div class="product">
+                <img src="Gallery/6.JPG" alt="Product 1">
+                <p>Dive Against Debris</p>
+            </div>
+            <div class="product">
+                <img src="Gallery/7.JPG" alt="Product 3">
+                <p>Dive Against Debris</p>
+            </div>
+            <div class="product">
+                <img src="Gallery/8.JPG" alt="Product 3">
+                <p>Dive Against Debris</p>
+            </div>
+            <div class="product">
+                <img src="Gallery/9.JPG" alt="Product 3">
+                <p>Dive Against Debris - with Pierre</p>
+            </div>
+            <div class="product">
+                <img src="Gallery/10.JPG" alt="Product 3">
+                <p>Dive Against Debris - with David</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 All rights reserved. WWMSID</p>
+    </footer>
 </body>
 </html>
