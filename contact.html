@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - WWMSID</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://yourdomain.com/contact.html" />
+  <style>
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      align-self: center;
+    }
+  </style>
 </head>
 <body>
   <header class="banner">
@@ -13,27 +37,27 @@
   <nav class="nav-container">
     <a href="index.html">Home</a>
     <a href="store.html">Store</a>
-    <a href="aboutme.html">About</a>
     <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
+    <a href="aboutme.html">About</a>
     <a href="crypto.html">Crypto</a>
+    <a href="contact.html">Contact</a>
   </nav>
   <div class="content-container">
     <section class="contact-form">
       <h2>We'd love to hear from you!</h2>
       <p>
-        If you have any questions, comments, or feedback, feel free to reach out using the form below.
-      </p>
-      <p>
-        If you're interested in the WWMSID Token airdrop, let us know and we will respond for Sol Address. (Use the Phantom Wallet for best results.)
+        Have questions or feedback? Reach out below. If you're interested in WWMSID Token airdrops, let us know your Sol Address (Phantom Wallet recommended).
       </p>
       <form action="https://formspree.io/f/xwplkven" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Your name" required />
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="wwmsid@your_email.com" required />
+
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+
         <button type="submit" class="button">Submit</button>
       </form>
     </section>

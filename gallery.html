@@ -1,211 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WWMSID - Gallery</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #ff0000;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            padding: 10px 15px;
-            text-align: center;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .hero {
-            background-image: url('hero-image.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-shadow: 2px 2px 4px #000;
-        }
-        .hero h1 {
-            font-size: 3em;
-        }
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .product {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 10px;
-            padding: 20px;
-            width: 300px;
-            text-align: center;
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WWMSID - Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://yourdomain.com/gallery.html" />
+  <style>
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery-item {
+      width: 280px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-item {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Gallery</h1>
-            
-    </header>
-    <nav class="nav-container">
-        <a href="index.html">Home</a>
-        <a href="store.html">Store</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="aboutme.html">About</a>
-        <a href="crypto.html">Crypto</a>
-        <a href="contact.html">Contact</a>
-      </nav>   
-    <div class="container">
-        <section id="products" class="products">
-            <div class="product">
-                <img src="Gallery/1.JPG" alt="Product 1">
-                <p>Dive Team.</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/2.jpg" alt="Product 2">
-                <p>Lionfish Hunt with Pierre.</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/3.jpg" alt="Product 3">
-                <p>IDC Completed</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/4.JPG" alt="Product 3">
-                <p>Dive Briefing</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/5.JPG" alt="Product 2">
-                <p>Dive Against Debris</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/6.JPG" alt="Product 1">
-                <p>Dive Against Debris</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/7.JPG" alt="Product 3">
-                <p>Dive Against Debris</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/8.JPG" alt="Product 3">
-                <p>Dive Against Debris</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/9.JPG" alt="Product 3">
-                <p>Dive Against Debris - with Pierre</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/10.JPG" alt="Product 3">
-                <p>Dive Against Debris - with David</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (1).jpg" alt="Product 3">
-                <p>Commerical diving. I worked at the cruiseship port </p>
+  <header class="banner">
+    <h1>Welcome to the Gallery</h1>
+  </header>
 
+  <nav class="nav-container">
+    <a href="index.html">Home</a>
+    <a href="store.html">Store</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="aboutme.html">About</a>
+    <a href="crypto.html">Crypto</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (2).jpg" alt="Product 3">
-                <p>Trevor and Me with father and son.</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (3).jpg" alt="Product 3">
-                <p>Diving Saskatoons Diving Center</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (4).jpg" alt="Product 3">
-                <p>REEF.org made a picture on their website. To say nice things. But the photo they used was from teaching
-                    divemaster, I was being the bad student and my divemaster candidate didn't inspect my gear. I have my gear backwords. I have to use octo because my main cannot reach my mouth.
-                </p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (5).jpg" alt="Product 3">
-                <p>This was our lionfish team for a lionfish derby in Roatan I think we got 4th place.</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (6).jpg" alt="Product 3">
-                <p>This was during our divemaster party. To find out what lead me to being in a bar with no pants on 
-                    you gotta buy WWMSID</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (7).jpg" alt="Product 3">
-                <p>My hair is sun bleached and i am trying to fiberglass a broken ladder</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (8).jpg" alt="Product 3">
-                <p>I have my camera and a bottle of nitrox. Good Times ahead.</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (9).jpeg" alt="Product 3">
-                <p>Sidemount with my new mask</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (10).jpg" alt="Product 3">
-                <p>Sidemount Diving for Lionfish</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (11).jpg" alt="Product 3">
-                <p>I found a seastar before I knew better not to touch</p>
-            </div>
-            <div class="product">
-                <img src="Gallery/gal (12).jpg" alt="Product 3">
-                <p>Disc Golfing in Anahiem with my luckey bear</p>
-            </div>
-
-
-
-
-
-        </section>
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="Gallery/1.JPG" alt="Dive Team">
+      <p>Dive Team</p>
     </div>
-    <footer>
-        <p>&copy; 2025 All rights reserved. WWMSID</p>
-    </footer>
+    <div class="gallery-item">
+      <img src="Gallery/2.jpg" alt="Lionfish Hunt">
+      <p>Lionfish Hunt with Pierre</p>
+    </div>
+    <div class="gallery-item">
+      <img src="Gallery/3.jpg" alt="IDC Completed">
+      <p>IDC Completed</p>
+    </div>
+    <div class="gallery-item">
+      <img src="Gallery/4.JPG" alt="Dive Briefing">
+      <p>Dive Briefing</p>
+    </div>
+    <div class="gallery-item">
+      <img src="Gallery/gal (6).jpg" alt="Divemaster Party">
+      <p>Divemaster party: Why no pants? Read WWMSID!</p>
+    </div>
+
+
+    <!-- Add more photos as needed following this format -->
+  </div>
+
+  <footer>
+    <p>&copy; 2025 WWMSID. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+

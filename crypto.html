@@ -1,105 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cryptocurrency</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .banner {
-            background-color: #00112D;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            width: 100%;
-        }
-
-        .nav-container {
-            background-color: #ff0000;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .nav-container a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        .content-container {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center; /* Centers the images */
-            gap: 20px; /* Adds spacing between images */
-            margin-top: 20px;
-        }
-
-        .circular-image {
-            width: 150px;  /* Adjust size as needed */
-            height: 150px; /* Ensure it's a square */
-            border-radius: 50%;
-            object-fit: cover; /* Keeps the aspect ratio */
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #00142F;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 10px;
-        }
-
-        .button:hover {
-            background-color: #005bb5;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WWMSID Tokens</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://yourdomain.com/crypto.html" />
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .circular-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .content-container p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+    @media (max-width: 768px) {
+      .circular-image {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="banner">
-        <h1>WWMSID Tokens</h1>
-    </div>
-    
-    <div class="nav-container">
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About</a>
-        <a href="store.html">Store</a>
-        <a href="contact.html">Contact</a>
-        <a href="crypto.html">Crypto</a>
-    </div>
-    
-    <div class="content-container">
-        <h2>About WWMSID Tokens</h2>
-        <p>WWMSID cryptocurrency was orignally created on Cronos chain but now is available on Solana. WWMSID can be used to purchase items from the store.</p>
-        <h3>How It Works</h3>
-        <p>Our blockchain-based system ensures transparency and reliability. Whether you are investing or using it for transactions, our coin is built for the future.</p>
-        <a href="https://dexscreener.com/solana/3qtiqmpqugpyujmy7zf8n9vn4xztz9vvxenksehowbrx" class="button">Dex Screener</a>
-        <a href="https://solscan.io/account/92a3eVB2rwC64eEhC4eSNMkybGnPuFxGrBQpiKAfqCwU" class="button">SOLscan</a>
-    </div>
+  <header class="banner">
+    <h1>WWMSID Tokens</h1>
+  </header>
+
+  <nav class="nav-container">
+    <a href="index.html">Home</a>
+    <a href="store.html">Store</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="aboutme.html">About</a>
+    <a href="crypto.html">Crypto</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="content-container">
+    <h2>About WWMSID Tokens</h2>
+    <p>Originally launched on Cronos chain, WWMSID is now on Solana and accepted in our store for product purchases.</p>
+
+    <h3>How It Works</h3>
+    <p>
+      Our blockchain-based token ensures transparency and usability. Whether you're investing or shopping, WWMSID is here to support our community.
+    </p>
+
+    <a href="https://dexscreener.com/solana/3qtiqmpqugpyujmy7zf8n9vn4xztz9vvxenksehowbrx" class="button">Dex Screener</a>
+    <a href="https://solscan.io/account/92a3eVB2rwC64eEhC4eSNMkybGnPuFxGrBQpiKAfqCwU" class="button">SOLscan</a>
 
     <div class="image-container">
-        <img src="Photos/red_logo.jpeg" alt="Image 1" class="circular-image">
-        <img src="Photos/red_logo.jpeg" alt="Image 2" class="circular-image">
-        <img src="Photos/red_logo.jpeg" alt="Image 3" class="circular-image">
+      <img src="Photos/red_logo.jpeg" alt="Token logo 1" class="circular-image" />
+      <img src="Photos/red_logo.jpeg" alt="Token logo 2" class="circular-image" />
+      <img src="Photos/red_logo.jpeg" alt="Token logo 3" class="circular-image" />
     </div>
-    <div= class="content-container">
-        <p>If you have purchased any WWMSID books or mechandise please fill out contact us form and once we can verify your purchase, we will airdrop you WWMSID Tokens. <br>Price of WWMSID Tokens is 5000 WWMSID = 1 USD in store. </p>
 
-    </div>
-        
-    
+    <p>If you’ve purchased WWMSID merch or books, contact us for your token airdrop. Exchange rate: <strong>5000 WWMSID = $1</strong> (store only).</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 WWMSID. All rights reserved.</p>
+  </footer>
 </body>
 </html>
