@@ -1,86 +1,219 @@
-/* styles.css */
+/* ===============================
+   GLOBAL BASE STYLES
+=================================*/
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===============================
+   HEADER (KEEP OLD WWMSID LOOK)
+=================================*/
+header.banner {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+/* ===============================
+   NAVBAR  (NF LAYOUT + WWMSID COLORS)
+=================================*/
+.navbar {
+  background-color: #ff0000;         /* WWMSID RED */
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  display: block;
+  padding: 14px 22px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  background-color: #333;
+}
+
+/* Dropdown Container */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background-color: #ff0000;
+  min-width: 170px;
+  border-radius: 4px;
+  z-index: 5;
+}
+
+.dropdown-content li a {
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ===============================
+   MOBILE NAVIGATION
+=================================*/
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
   }
-  
-  header.banner {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
+
+  .nav-links {
+    flex-direction: column;
     width: 100%;
+    display: none;
+    background-color: #ff0000;
+    position: absolute;
+    top: 60px;
+    left: 0;
   }
-  
-  .nav-container {
+
+  .nav-links.active {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #ff0000;
-    padding: 10px;
+  }
+
+  .nav-links li {
     width: 100%;
   }
-  
-  .nav-container a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
+
+  .nav-links li a:hover {
+    background-color: #222;
   }
-  
-  .nav-container a:hover {
-    text-decoration: underline;
+
+  /* Dropdown behavior for mobile (click-to-open) */
+  .dropdown-content {
+    position: static;
+    background-color: #333;
   }
-  
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* disable hover dropdown on mobile */
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block;
+  }
+}
+
+/* ===============================
+   CONTENT CONTAINER
+=================================*/
+.content-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Sections styled like NF */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  border-left: 5px solid #ff0000;
+}
+
+/* ===============================
+   BUTTONS (same WWMSID colors)
+=================================*/
+.button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #ff0000;
+}
+
+/* ===============================
+   VIDEO CONTAINER (NF STYLE)
+=================================*/
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;  /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+/* ===============================
+   FOOTER
+=================================*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* ===============================
+   MOBILE STYLING FOR CONTENT
+=================================*/
+@media (max-width: 768px) {
   .content-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
+    width: 90%;
   }
-  
+
   .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
+    width: 90%;
   }
-  
-  .button:hover {
-    background-color: #ff0000;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
-    .nav-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-container a {
-      display: block;
-      padding: 10px;
-      width: 100%;
-      text-align: center;
-    }
-  
-    .content-container {
-      padding: 15px;
-    }
-  
-    .button {
-      width: 90%;
-      box-sizing: border-box;
-    }
-  }
-  
+}
