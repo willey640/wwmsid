@@ -670,3 +670,122 @@ footer p {
     text-align: center;
   }
 }
+
+/* ===============================
+   404 PAGE
+=================================*/
+.error-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.75)),
+    url("Photos/404-dive.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===============================
+   STORE PAGE
+=================================*/
+.store-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.72)),
+    url("Photos/store-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.store-intro {
+  max-width: 780px;
+  margin-bottom: 35px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  border-top: 5px solid #ff0000;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #eee;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  margin: 0 0 10px;
+  color: #111;
+  font-size: 1.15rem;
+}
+
+.product-info p {
+  color: #444;
+  margin: 0 0 12px;
+}
+
+.product-info .price {
+  color: #cc0000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.multi-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.multi-image img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Mobile store page */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===============================
+   FINAL RESPONSIVE FIXES
+=================================*/
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    aspect-ratio: 4 / 3;
+  }
+}

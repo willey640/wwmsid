@@ -3,35 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>404 - Page Not Found | WWMSID</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    h1 {
-      font-size: 3em;
-      color: #ff0000;
-    }
-    p {
-      font-size: 1.2em;
-      margin-top: 20px;
-    }
-    a {
-      color: #00112D;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+
+  <meta name="description" content="The page you are looking for could not be found on the WWMSID website." />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <h1>404 - Page Not Found</h1>
-  <p>Uh-oh, diver! This page seems to be lost in the deep.</p>
-  <p><a href="index.html">Click here to resurface</a></p>
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-text">
+        <span class="small-title">WWMSID</span>
+        <h1>What Would My Scuba Instructor Do?</h1>
+      </div>
+
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="aboutme.html">Book ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="aboutme.html">About the Book</a></li>
+            <li><a href="index.html#buy">Buy the Book</a></li>
+            <li><a href="index.html#summary">Book Summary</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="index.html#career">Dive Career ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="index.html#career">Career Highlights</a></li>
+            <li><a href="index.html#media">Media Features</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="gallery.html">Gallery ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="gallery.html#featured">Featured Photos</a></li>
+            <li><a href="gallery.html#underwater">Underwater</a></li>
+            <li><a href="gallery.html#career-gallery">Dive Career</a></li>
+            <li><a href="gallery.html#lionfish">Lionfish</a></li>
+          </ul>
+        </li>
+
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- 404 HERO -->
+  <section class="hero error-hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <p class="eyebrow">404 Error • Page Not Found</p>
+
+        <h2>Lost in the Deep</h2>
+
+        <p class="hero-text">
+          Uh-oh, diver. This page seems to have drifted off course.
+          The link may be broken, moved, or no longer available.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="index.html" class="button primary-button">Return Home</a>
+          <a href="gallery.html" class="button secondary-button">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <main>
+
+    <section class="content-section notice-section">
+      <div class="section-inner">
+        <h2>Resurface and Try Again</h2>
+        <p>
+          You can return to the homepage, browse the photo gallery, read about the book,
+          or contact WWMSID if you believe something is missing.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="content-section">
+      <div class="section-inner">
+        <p class="eyebrow red">Helpful Links</p>
+        <h2>Where would you like to go?</h2>
+
+        <div class="link-grid">
+
+          <a href="index.html" class="link-card">
+            <h3>Home</h3>
+            <p>Return to the main WWMSID homepage.</p>
+          </a>
+
+          <a href="index.html#buy" class="link-card">
+            <h3>Buy the Book</h3>
+            <p>Find the book on Amazon or Audible.</p>
+          </a>
+
+          <a href="index.html#career" class="link-card">
+            <h3>Dive Career</h3>
+            <p>Read about Christopher Willey's scuba career and media features.</p>
+          </a>
+
+          <a href="gallery.html" class="link-card">
+            <h3>Photo Gallery</h3>
+            <p>Browse scuba, travel, underwater, and career photos.</p>
+          </a>
+
+          <a href="store.html" class="link-card">
+            <h3>Store</h3>
+            <p>Visit the WWMSID store page.</p>
+          </a>
+
+          <a href="contact.html" class="link-card">
+            <h3>Contact</h3>
+            <p>Send a message about the book, website, or scuba-related questions.</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 WWMSID. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
