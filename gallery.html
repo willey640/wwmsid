@@ -3,83 +3,295 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WWMSID - Gallery</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="canonical" href="https://yourdomain.com/gallery.html" />
-  <style>
-    .gallery-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-    .gallery-item {
-      width: 280px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      text-align: center;
-      padding: 15px;
-      box-sizing: border-box;
-    }
-    .gallery-item img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
 
-    @media (max-width: 768px) {
-      .gallery-item {
-        width: 90%;
-      }
-    }
-  </style>
+  <title>Photo Gallery | What Would My Scuba Instructor Do?</title>
+
+  <meta name="description" content="Photo gallery from Christopher Willey's scuba diving career, including dive travel, underwater photos, lionfish work, dive-shop life, and WWMSID book-related images." />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Change this to your real domain -->
+  <link rel="canonical" href="https://yourdomain.com/gallery.html" />
 </head>
+
 <body>
-  <header class="banner">
-    <h1>Welcome to the Gallery</h1>
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-text">
+        <span class="small-title">WWMSID</span>
+        <h1>What Would My Scuba Instructor Do?</h1>
+      </div>
+
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="aboutme.html">Book ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="aboutme.html">About the Book</a></li>
+            <li><a href="index.html#buy">Buy the Book</a></li>
+            <li><a href="index.html#summary">Book Summary</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="index.html#career">Dive Career ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="index.html#career">Career Highlights</a></li>
+            <li><a href="index.html#media">Media Features</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="gallery.html" class="active">Gallery ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="#featured">Featured Photos</a></li>
+            <li><a href="#underwater">Underwater</a></li>
+            <li><a href="#career-gallery">Dive Career</a></li>
+            <li><a href="#lionfish">Lionfish</a></li>
+          </ul>
+        </li>
+
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav class="nav-container">
-    <a href="index.html">Home</a>
-    <a href="store.html">Store</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="videos.html">Videos</a>
-    <a href="aboutme.html">About</a>
-    <a href="crypto.html">Crypto</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 
-  <div class="gallery-container">
-    <div class="gallery-item">
-      <img src="Gallery/1.JPG" alt="Dive Team">
-      <p>Dive Team</p>
+  <!-- GALLERY HERO -->
+  <section class="hero gallery-hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <p class="eyebrow">Scuba • Travel • Dive Career • Underwater Photos</p>
+
+        <h2>WWMSID Photo Gallery</h2>
+
+        <p class="hero-text">
+          Photos from Christopher Willey's scuba diving career, dive travel, instruction,
+          lionfish work, and the stories behind What Would My Scuba Instructor Do?
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#featured" class="button primary-button">View Photos</a>
+          <a href="index.html#buy" class="button secondary-button">Buy the Book</a>
+        </div>
+      </div>
     </div>
-    <div class="gallery-item">
-      <img src="Gallery/2.jpg" alt="Lionfish Hunt">
-      <p>Lionfish Hunt with Pierre</p>
-    </div>
-    <div class="gallery-item">
-      <img src="Gallery/3.jpg" alt="IDC Completed">
-      <p>IDC Completed</p>
-    </div>
-    <div class="gallery-item">
-      <img src="Gallery/4.JPG" alt="Dive Briefing">
-      <p>Dive Briefing</p>
-    </div>
-    <div class="gallery-item">
-      <img src="Gallery/gal (6).jpg" alt="Divemaster Party">
-      <p>Divemaster party: Why no pants? Read WWMSID!</p>
-    </div>
+  </section>
 
 
-    <!-- Add more photos as needed following this format -->
-  </div>
+  <main>
 
+    <!-- INTRO -->
+    <section class="content-section notice-section">
+      <div class="section-inner">
+        <h2>Scuba Career Photo Collection</h2>
+        <p>
+          This gallery is organized to show the visual side of WWMSID: dive-shop life,
+          underwater experiences, scuba instruction, travel, and conservation work.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- FEATURED PHOTOS -->
+    <section class="content-section gallery-section" id="featured">
+      <div class="section-inner">
+        <p class="eyebrow red">Featured Gallery</p>
+        <h2>Featured Dive Photos</h2>
+
+        <p class="gallery-intro">
+          A selected group of photos from Christopher Willey's dive career and WWMSID story.
+        </p>
+
+        <div class="gallery-grid">
+
+          <a href="Photos/Gallery/10.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/10.JPG" alt="Featured scuba diving photo" />
+          </a>
+
+          <a href="Photos/Gallery/7.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/7.JPG" alt="Underwater diving photo" />
+          </a>
+
+          <a href="Photos/Gallery/3.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/3.JPG" alt="Dive career photo" />
+          </a>
+
+          <a href="Photos/Gallery/4.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/4.JPG" alt="Scuba instruction photo" />
+          </a>
+
+          <a href="Photos/Gallery/5.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/5.JPG" alt="Dive travel photo" />
+          </a>
+
+          <a href="Photos/Gallery/6.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/6.JPG" alt="Ocean diving photo" />
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- UNDERWATER PHOTOS -->
+    <section class="content-section gallery-section" id="underwater">
+      <div class="section-inner">
+        <p class="eyebrow red">Underwater</p>
+        <h2>Underwater Photos</h2>
+
+        <p class="gallery-intro">
+          Ocean, reef, fish, and underwater diving images.
+        </p>
+
+        <div class="gallery-grid">
+
+          <a href="Photos/Gallery/1.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/1.JPG" alt="Underwater scuba photo" />
+          </a>
+
+          <a href="Photos/Gallery/2.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/2.JPG" alt="Reef diving photo" />
+          </a>
+
+          <a href="Photos/Gallery/8.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/8.JPG" alt="Ocean life photo" />
+          </a>
+
+          <a href="Photos/Gallery/9.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/9.JPG" alt="Scuba diving underwater photo" />
+          </a>
+
+          <a href="Photos/Gallery/11.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/11.JPG" alt="Underwater travel photo" />
+          </a>
+
+          <a href="Photos/Gallery/12.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/12.JPG" alt="Scuba diving reef photo" />
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- DIVE CAREER PHOTOS -->
+    <section class="content-section gallery-section" id="career-gallery">
+      <div class="section-inner">
+        <p class="eyebrow red">Dive Career</p>
+        <h2>Dive Career & Instruction</h2>
+
+        <p class="gallery-intro">
+          Photos connected to scuba training, dive-shop life, dive travel, and professional diving.
+        </p>
+
+        <div class="gallery-grid">
+
+          <a href="Photos/Gallery/13.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/13.JPG" alt="Scuba instructor career photo" />
+          </a>
+
+          <a href="Photos/Gallery/14.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/14.JPG" alt="Dive shop career photo" />
+          </a>
+
+          <a href="Photos/Gallery/15.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/15.JPG" alt="Scuba training photo" />
+          </a>
+
+          <a href="Photos/Gallery/16.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/16.JPG" alt="Dive travel career photo" />
+          </a>
+
+          <a href="Photos/Gallery/17.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/17.JPG" alt="Professional scuba photo" />
+          </a>
+
+          <a href="Photos/Gallery/18.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/18.JPG" alt="Scuba career image" />
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- LIONFISH / CONSERVATION -->
+    <section class="content-section career-section" id="lionfish">
+      <div class="section-inner">
+        <p class="eyebrow red">Lionfish & Conservation</p>
+        <h2>Lionfish Work and Marine Awareness</h2>
+
+        <p class="gallery-intro">
+          Photos connected to lionfish awareness, invasive species education, and marine conservation work.
+        </p>
+
+        <div class="gallery-grid">
+
+          <a href="Photos/Gallery/19.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/19.JPG" alt="Lionfish awareness photo" />
+          </a>
+
+          <a href="Photos/Gallery/20.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/20.JPG" alt="Lionfish conservation photo" />
+          </a>
+
+          <a href="Photos/Gallery/21.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/21.JPG" alt="Marine conservation diving photo" />
+          </a>
+
+          <a href="Photos/Gallery/22.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/22.JPG" alt="Invasive species education photo" />
+          </a>
+
+          <a href="Photos/Gallery/23.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/23.JPG" alt="Lionfish diving photo" />
+          </a>
+
+          <a href="Photos/Gallery/24.JPG" class="gallery-item" target="_blank">
+            <img src="Photos/Gallery/24.JPG" alt="Scuba conservation photo" />
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="final-cta">
+      <div class="section-inner">
+        <h2>Want the stories behind the photos?</h2>
+        <p>
+          Read What Would My Scuba Instructor Do? for dive-shop stories, scuba career lessons,
+          travel experiences, and real moments from life in the diving industry.
+        </p>
+
+        <div class="button-row center">
+          <a href="index.html#buy" class="button primary-button">Buy the Book</a>
+          <a href="index.html#career" class="button secondary-button">Explore Dive Career</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 WWMSID. All rights reserved.</p>
+    <p>&copy; 2025 WWMSID. All Rights Reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
-

@@ -3,67 +3,193 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - WWMSID</title>
+
+  <title>Contact | What Would My Scuba Instructor Do?</title>
+
+  <meta name="description" content="Contact Christopher Willey about What Would My Scuba Instructor Do?, scuba diving, dive career stories, media, book questions, or WWMSID updates." />
+
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Change this to your real domain -->
   <link rel="canonical" href="https://yourdomain.com/contact.html" />
-  <style>
-    .contact-form form {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    .contact-form label,
-    .contact-form input,
-    .contact-form textarea {
-      margin-bottom: 15px;
-      font-size: 1rem;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .contact-form button {
-      align-self: center;
-    }
-  </style>
 </head>
+
 <body>
-  <header class="banner">
-    <h1>Contact Us</h1>
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-text">
+        <span class="small-title">WWMSID</span>
+        <h1>What Would My Scuba Instructor Do?</h1>
+      </div>
+
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="aboutme.html">Book ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="aboutme.html">About the Book</a></li>
+            <li><a href="index.html#buy">Buy the Book</a></li>
+            <li><a href="index.html#summary">Book Summary</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="index.html#career">Dive Career ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="index.html#career">Career Highlights</a></li>
+            <li><a href="index.html#media">Media Features</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="gallery.html">Gallery ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="gallery.html#featured">Featured Photos</a></li>
+            <li><a href="gallery.html#underwater">Underwater</a></li>
+            <li><a href="gallery.html#career-gallery">Dive Career</a></li>
+            <li><a href="gallery.html#lionfish">Lionfish</a></li>
+          </ul>
+        </li>
+
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav class="nav-container">
-    <a href="index.html">Home</a>
-    <a href="store.html">Store</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="aboutme.html">About</a>
-    <a href="crypto.html">Crypto</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="content-container">
-    <section class="contact-form">
-      <h2>We'd love to hear from you!</h2>
-      <p>
-        Have questions or feedback? Reach out below. If you're interested in WWMSID Token airdrops, let us know your Sol Address (Phantom Wallet recommended).
-      </p>
-      <form action="https://formspree.io/f/xwplkven" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="wwmsid@your_email.com" required />
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+  <!-- CONTACT HERO -->
+  <section class="hero contact-hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <p class="eyebrow">Questions • Book inquiries • Dive career • Media</p>
 
-        <button type="submit" class="button">Submit</button>
-      </form>
+        <h2>Contact WWMSID</h2>
+
+        <p class="hero-text">
+          Get in touch about the book, scuba diving, dive career stories, media features,
+          photo galleries, or general WWMSID questions.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact-form" class="button primary-button">Send a Message</a>
+          <a href="index.html#buy" class="button secondary-button">Buy the Book</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <main>
+
+    <!-- INTRO SECTION -->
+    <section class="content-section notice-section">
+      <div class="section-inner">
+        <h2>Reach Out</h2>
+        <p>
+          Use the form below for book questions, scuba-related inquiries, website feedback,
+          media questions, or general WWMSID messages.
+        </p>
+      </div>
     </section>
-  </div>
+
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="content-section contact-section" id="contact-form">
+      <div class="section-inner contact-grid">
+
+        <div class="contact-info">
+          <p class="eyebrow red">Contact</p>
+          <h2>Send a Message</h2>
+
+          <p>
+            Have a question about <strong>What Would My Scuba Instructor Do?</strong>,
+            Christopher Willey's dive career, media features, or scuba stories?
+            Send a message using the form.
+          </p>
+
+          <p>
+            For book-related questions, include whether you are asking about the ebook,
+            audiobook, paperback, or future WWMSID projects.
+          </p>
+
+          <div class="contact-card">
+            <h3>Message Topics</h3>
+            <ul>
+              <li>Book questions</li>
+              <li>Scuba and dive-career questions</li>
+              <li>Photo or media inquiries</li>
+              <li>Website feedback</li>
+              <li>General WWMSID messages</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="contact-form-card">
+          <form action="https://formspree.io/f/xwplkven" method="POST" class="contact-form">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option value="Book question">Book question</option>
+              <option value="Dive career question">Dive career question</option>
+              <option value="Media inquiry">Media inquiry</option>
+              <option value="Website feedback">Website feedback</option>
+              <option value="General message">General message</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="7" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit" class="button primary-button">Send Message</button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="final-cta">
+      <div class="section-inner">
+        <h2>Want to read the stories behind the dive career?</h2>
+        <p>
+          What Would My Scuba Instructor Do? shares real scuba stories, dive-shop lessons,
+          and experiences from life in the diving industry.
+        </p>
+
+        <div class="button-row center">
+          <a href="index.html#buy" class="button primary-button">Buy the Book</a>
+          <a href="gallery.html" class="button secondary-button">View Gallery</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 WWMSID. All Rights Reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
