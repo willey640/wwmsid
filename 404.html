@@ -9,59 +9,15 @@
   <meta name="description" content="The page you are looking for could not be found on the WWMSID website." />
 
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="modern.css" />
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
 
   <!-- TOP HEADER -->
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="logo-text">
-        <span class="small-title">WWMSID</span>
-        <h1>What Would My Scuba Instructor Do?</h1>
-      </div>
-
-      <div class="hamburger" id="hamburger">&#9776;</div>
-    </div>
-
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-
-        <li class="dropdown">
-          <a href="aboutme.html">Book ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="aboutme.html">About the Book</a></li>
-            <li><a href="index.html#buy">Buy the Book</a></li>
-            <li><a href="index.html#summary">Book Summary</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="index.html#career">Dive Career ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="index.html#career">Career Highlights</a></li>
-            <li><a href="index.html#media">Media Features</a></li>
-            <li><a href="gallery.html">Photo Gallery</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="gallery.html">Gallery ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="gallery.html#featured">Featured Photos</a></li>
-            <li><a href="gallery.html#underwater">Underwater</a></li>
-            <li><a href="gallery.html#career-gallery">Dive Career</a></li>
-            <li><a href="gallery.html#lionfish">Lionfish</a></li>
-          </ul>
-        </li>
-
-        <li><a href="store.html">Store</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="WWMSID home"><span class="brand-mark" aria-hidden="true"><span>W</span></span><span class="brand-name">WWMSID<small>What Would My Scuba Instructor Do?</small></span></a><button class="hamburger" id="hamburger" aria-controls="nav-links" aria-expanded="false" type="button">Menu</button></div><nav class="navbar" aria-label="Main navigation"><ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="aboutme.html">My career</a></li><li><a href="gallery.html">Photographs</a></li><li><a href="books.html">Books</a></li><li><a href="stories.html">Stories</a></li><li><a href="video.html">Videos</a></li><li><a href="store.html">Store</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
 
 
   <!-- 404 HERO -->
@@ -70,7 +26,7 @@
       <div class="hero-content">
         <p class="eyebrow">404 Error • Page Not Found</p>
 
-        <h2>Lost in the Deep</h2>
+        <h1>Lost in the Deep</h1>
 
         <p class="hero-text">
           Uh-oh, diver. This page seems to have drifted off course.
@@ -86,7 +42,7 @@
   </section>
 
 
-  <main>
+  <main id="main-content">
 
     <section class="content-section notice-section">
       <div class="section-inner">
@@ -144,9 +100,7 @@
 
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 WWMSID. All Rights Reserved.</p>
-  </footer>
+  <footer><div class="footer-inner"><div><p class="footer-brand">WWMSID</p><p>What Would My Scuba Instructor Do?</p><p class="footer-note">The diving photographs, books &amp; experiences of Christopher Willey.</p></div><div><nav class="footer-links" aria-label="Footer navigation"><a href="aboutme.html#certifications">Credentials</a><a href="index.html#media">In the media</a><a href="contact.html">Get in touch</a><a href="crypto.html">WWMSID Tokens</a><a href="https://www.facebook.com/WWMSID/" target="_blank" rel="noopener noreferrer">Facebook</a></nav><p class="footer-note">&copy; 2025 WWMSID. All Rights Reserved.</p></div></div></footer>
 
   <script src="script.js"></script>
 

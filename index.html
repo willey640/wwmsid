@@ -9,70 +9,26 @@
   <meta name="description" content="What Would My Scuba Instructor Do? is a scuba diving book by Christopher Willey, sharing real dive-shop stories, scuba career lessons, and underwater adventure." />
 
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- Change this to your real domain -->
-  <link rel="canonical" href="https://yourdomain.com/index.html" />
+  <link rel="stylesheet" href="modern.css" />
+  <link rel="canonical" href="https://www.wwmsid.ca/index.html" />
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
 
   <!-- TOP HEADER -->
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="logo-text">
-        <span class="small-title">WWMSID</span>
-        <h1>What Would My Scuba Instructor Do?</h1>
-      </div>
-
-      <div class="hamburger" id="hamburger">&#9776;</div>
-    </div>
-
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-
-        <li class="dropdown">
-          <a href="aboutme.html">Book ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="aboutme.html">About the Book</a></li>
-            <li><a href="#buy">Buy the Book</a></li>
-            <li><a href="#summary">Book Summary</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#career">Dive Career ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="#career">Career Highlights</a></li>
-            <li><a href="#media">Media Features</a></li>
-            <li><a href="#gallery">Photo Gallery</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="gallery.html">Gallery ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="#gallery">Featured Photos</a></li>
-            <li><a href="gallery.html">Full Gallery</a></li>
-            <li><a href="videos.html">Videos</a></li>
-          </ul>
-        </li>
-
-        <li><a href="store.html">Store</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="WWMSID home"><span class="brand-mark" aria-hidden="true"><span>W</span></span><span class="brand-name">WWMSID<small>What Would My Scuba Instructor Do?</small></span></a><button class="hamburger" id="hamburger" aria-controls="nav-links" aria-expanded="false" type="button">Menu</button></div><nav class="navbar" aria-label="Main navigation"><ul class="nav-links" id="nav-links"><li><a href="index.html" class="active" aria-current="page">Home</a></li><li><a href="aboutme.html">My career</a></li><li><a href="gallery.html">Photographs</a></li><li><a href="books.html">Books</a></li><li><a href="stories.html">Stories</a></li><li><a href="video.html">Videos</a></li><li><a href="store.html">Store</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
 
 
   <!-- HERO SECTION -->
-  <section class="hero">
+  <section class="hero home-hero" aria-label="Life below the surface">
+<img class="hero-photo" src="assets/photos/hero-1600.jpg" width="1600" height="1067" alt="Scuba divers exploring above the reef" fetchpriority="high" decoding="async">
     <div class="hero-overlay">
       <div class="hero-content">
-        <p class="eyebrow">Scuba stories • Dive-shop life • Real lessons from the water</p>
+        <p class="eyebrow">Christopher Willey · Scuba instructor &amp; author</p>
 
-        <h2>What Would My Scuba Instructor Do?</h2>
+        <h1>A life below<br> the <em>surface.</em></h1>
 
         <p class="hero-text">
           A scuba diving book by Christopher Willey about dive culture, training, travel,
@@ -85,10 +41,11 @@
         </div>
       </div>
     </div>
-  </section>
+  <p class="hero-credit">Photograph: David Sanchez Pachon</p></section>
 
 
-  <main>
+  <main id="main-content">
+<section class="content-section"><div class="section-inner editorial-grid"><img src="assets/photos/m0001-960.jpg" width="960" height="640" loading="lazy" alt="Five divers together on a boat"><div class="editorial-copy"><p class="eyebrow">The person behind WWMSID</p><h2>More than dives.<br>A lifetime of stories.</h2><p>Scuba instruction, life around the dive shop, and the people met along the way. This is the world behind <em>What Would My Scuba Instructor Do?</em></p><p>Christopher Willey’s career brought together diver training in Roatan, Honduras, marine-life education, and lionfish awareness. Explore the experiences above and below the surface.</p><a class="text-link" href="aboutme.html">Meet Christopher</a></div></div></section>
 
     <!-- NEWS / UPDATE -->
     <section class="content-section notice-section">
@@ -99,8 +56,7 @@
           dive career stories, media features, and photo galleries.
         </p>
         <p>
-          Due to unforeseen circumstances, the release of the second book in the WWMSID
-          series has been postponed indefinitely. Updates will be posted when available.
+          The second book in the WWMSID series is planned for release in 2027. More details will be shared when available.
         </p>
       </div>
     </section>
@@ -111,7 +67,7 @@
       <div class="section-inner book-grid">
 
         <div class="book-cover-wrap">
-          <img src="Photos/wwmsid_cover.jpg" alt="What Would My Scuba Instructor Do book cover" class="book-cover" />
+          <img loading="lazy" decoding="async" src="assets/site/wwmsid-cover.jpg" width="800" height="1200" alt="What Would My Scuba Instructor Do book cover" class="book-cover" />
         </div>
 
         <div class="book-info">
@@ -136,8 +92,8 @@
           </div>
 
           <div class="button-row">
-            <a href="https://www.amazon.ca/What-Would-My-Scuba-Instructor-ebook/dp/B08QG22KCZ" class="button primary-button" target="_blank">Buy on Amazon</a>
-            <a href="https://www.audible.ca/pd/What-Would-My-Scuba-Instructor-Do-Audiobook/B099WCHRFC" class="button dark-button" target="_blank">Buy on Audible</a>
+            <a href="https://www.amazon.ca/What-Would-My-Scuba-Instructor-ebook/dp/B08QG22KCZ" class="button primary-button" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+            <a href="https://www.audible.ca/pd/What-Would-My-Scuba-Instructor-Do-Audiobook/B099WCHRFC" class="button dark-button" target="_blank" rel="noopener noreferrer">Buy on Audible</a>
           </div>
         </div>
 
@@ -214,40 +170,18 @@
     <section class="content-section gallery-section" id="gallery">
       <div class="section-inner">
         <p class="eyebrow red">Photo Gallery</p>
-        <h2>Featured Dive Photos</h2>
+        <div class="section-heading"><h2>Through the dive mask.</h2><a class="text-link" href="gallery.html">Explore the collection</a></div>
 
         <p class="gallery-intro">
           A collection of scuba, travel, dive-shop, and underwater photos from Christopher Willey's dive career.
         </p>
 
-        <div class="gallery-grid">
-
-          <!-- Replace these image names with your actual files -->
-          <a href="Photos/Gallery/10.JPG" class="gallery-item">
-            <img src="Photos/Gallery/10.JPG" alt="Scuba diving photo" />
-          </a>
-
-          <a href="Photos/Gallery/7.JPG" class="gallery-item">
-            <img src="Photos/Gallery/7.JPG" alt="Underwater scuba photo" />
-          </a>
-
-          <a href="Photos/Gallery/3.JPG" class="gallery-item">
-            <img src="Photos/Gallery/3.JPG" alt="Dive career photo" />
-          </a>
-
-          <a href="Photos/Gallery/4.JPG" class="gallery-item">
-            <img src="Photos/Gallery/4.JPG" alt="Scuba instructor photo" />
-          </a>
-
-          <a href="Photos/Gallery/5.JPG" class="gallery-item">
-            <img src="Photos/Gallery/5.JPG" alt="Dive travel photo" />
-          </a>
-
-          <a href="Photos/Gallery/6.JPG" class="gallery-item">
-            <img src="Photos/Gallery/6.JPG" alt="Ocean diving photo" />
-          </a>
-
-        </div>
+        <div class="gallery-grid" data-curated-home data-lightbox-group="featured"><figure class="photo-card" data-category="My Diving Career"><a class="gallery-item" href="assets/photos/m0018-1600.jpg" data-lightbox data-caption="Divers above the seabed" data-context="Photograph: David Sanchez Pachon. Names, location and date are unconfirmed." aria-label="View photograph: Divers above the seabed"><img src="assets/photos/m0018-640.jpg" srcset="assets/photos/m0018-640.jpg 640w, assets/photos/m0018-960.jpg 960w, assets/photos/m0018-1600.jpg 1600w" sizes="(max-width: 380px) 90vw, (max-width: 768px) 45vw, 31vw" width="640" height="427" alt="Divers above the seabed" loading="lazy" decoding="async"></a><figcaption><span class="photo-category">My Diving Career</span><strong>Divers above the seabed</strong><span class="photo-credit">Photograph: David Sanchez Pachon</span></figcaption></figure>
+<figure class="photo-card" data-category="Marine Life and Underwater Photography"><a class="gallery-item" href="assets/photos/m1302-1600.jpg" data-lightbox data-caption="A sea turtle beside the reef" data-context="Names, location and date are unconfirmed." aria-label="View photograph: A sea turtle beside the reef"><img src="assets/photos/m1302-640.jpg" srcset="assets/photos/m1302-640.jpg 640w, assets/photos/m1302-960.jpg 960w, assets/photos/m1302-1600.jpg 1600w" sizes="(max-width: 380px) 90vw, (max-width: 768px) 45vw, 31vw" width="640" height="504" alt="A sea turtle beside the reef" loading="lazy" decoding="async"></a><figcaption><span class="photo-category">Marine Life and Underwater Photography</span><strong>A sea turtle beside the reef</strong></figcaption></figure>
+<figure class="photo-card" data-category="Dive Teams and Friends"><a class="gallery-item" href="assets/photos/m0001-1600.jpg" data-lightbox data-caption="Five divers together on a boat" data-context="Names, location and date are unconfirmed." aria-label="View photograph: Five divers together on a boat"><img src="assets/photos/m0001-640.jpg" srcset="assets/photos/m0001-640.jpg 640w, assets/photos/m0001-960.jpg 960w, assets/photos/m0001-1600.jpg 1600w" sizes="(max-width: 380px) 90vw, (max-width: 768px) 45vw, 31vw" width="640" height="427" alt="Five divers together on a boat" loading="lazy" decoding="async"></a><figcaption><span class="photo-category">Dive Teams and Friends</span><strong>Five divers together on a boat</strong></figcaption></figure>
+<figure class="photo-card" data-category="Marine Life and Underwater Photography"><a class="gallery-item" href="assets/photos/m0501-1600.jpg" data-lightbox data-caption="A squid over the reef" data-context="Names, location and date are unconfirmed." aria-label="View photograph: A squid over the reef"><img src="assets/photos/m0501-640.jpg" srcset="assets/photos/m0501-640.jpg 640w, assets/photos/m0501-960.jpg 960w, assets/photos/m0501-1600.jpg 1600w" sizes="(max-width: 380px) 90vw, (max-width: 768px) 45vw, 31vw" width="640" height="480" alt="A squid over the reef" loading="lazy" decoding="async"></a><figcaption><span class="photo-category">Marine Life and Underwater Photography</span><strong>A squid over the reef</strong></figcaption></figure>
+<figure class="photo-card" data-category="Lionfish Hunting and Conservation"><a class="gallery-item" href="assets/photos/m1594-1600.jpg" data-lightbox data-caption="Divers handling a tire underwater" data-context="Names, location and date are unconfirmed." aria-label="View photograph: Divers handling a tire underwater"><img src="assets/photos/m1594-640.jpg" srcset="assets/photos/m1594-640.jpg 640w, assets/photos/m1594-960.jpg 960w, assets/photos/m1594-1600.jpg 1600w" sizes="(max-width: 380px) 90vw, (max-width: 768px) 45vw, 31vw" width="640" height="480" alt="Divers handling a tire underwater" loading="lazy" decoding="async"></a><figcaption><span class="photo-category">Lionfish Hunting and Conservation</span><strong>Divers handling a tire underwater</strong></figcaption></figure>
+<figure class="photo-card" data-category="Marine Life and Underwater Photography"><a class="gallery-item" href="assets/photos/m1095-1600.jpg" data-lightbox data-caption="A spotted reef fish" data-context="Names, location and date are unconfirmed." aria-label="View photograph: A spotted reef fish"><img src="assets/photos/m1095-640.jpg" srcset="assets/photos/m1095-640.jpg 640w, assets/photos/m1095-960.jpg 960w, assets/photos/m1095-1600.jpg 1600w" sizes="(max-width: 380px) 90vw, (max-width: 768px) 45vw, 31vw" width="640" height="359" alt="A spotted reef fish" loading="lazy" decoding="async"></a><figcaption><span class="photo-category">Marine Life and Underwater Photography</span><strong>A spotted reef fish</strong></figcaption></figure></div>
 
         <div class="center-button">
           <a href="gallery.html" class="button primary-button">View Full Gallery</a>
@@ -264,32 +198,32 @@
 
         <div class="link-grid">
 
-          <a href="https://www.facebook.com/WWMSID/" target="_blank" class="link-card">
+          <a href="https://www.facebook.com/WWMSID/" target="_blank" rel="noopener noreferrer" class="link-card">
             <h3>Facebook Page</h3>
             <p>Follow WWMSID updates and related content.</p>
           </a>
 
-          <a href="https://www.divenewswire.com/lionfish-hunter-padi-specialty-course-highlights-safe-hunting-practices-on-roatan/" target="_blank" class="link-card">
+          <a href="https://www.divenewswire.com/lionfish-hunter-padi-specialty-course-highlights-safe-hunting-practices-on-roatan/" target="_blank" rel="noopener noreferrer" class="link-card">
             <h3>DiveWire Lionfish</h3>
             <p>Article about lionfish hunter specialty training.</p>
           </a>
 
-          <a href="https://www.thereminder.ca/local-news/ex-hapnot-student-now-battling-invasive-tropical-species-4139064" target="_blank" class="link-card">
+          <a href="https://www.thereminder.ca/local-news/ex-hapnot-student-now-battling-invasive-tropical-species-4139064" target="_blank" rel="noopener noreferrer" class="link-card">
             <h3>The Reminder</h3>
             <p>Feature on invasive species work and dive career.</p>
           </a>
 
-          <a href="https://www.deeperblue.com/padi-instructor-creates-lionfish-hunter-distinctive-specialty/" target="_blank" class="link-card">
+          <a href="https://www.deeperblue.com/padi-instructor-creates-lionfish-hunter-distinctive-specialty/" target="_blank" rel="noopener noreferrer" class="link-card">
             <h3>Deeper Blue</h3>
             <p>Coverage of the lionfish hunter distinctive specialty.</p>
           </a>
 
-          <a href="https://www.divenewswire.com/fantasy-island-roatan-now-offers-advanced-padi-fish-id-specialty-course/" target="_blank" class="link-card">
+          <a href="https://www.divenewswire.com/fantasy-island-roatan-now-offers-advanced-padi-fish-id-specialty-course/" target="_blank" rel="noopener noreferrer" class="link-card">
             <h3>DiveWire Fish ID</h3>
             <p>Article about advanced fish identification specialty training.</p>
           </a>
 
-          <a href="https://payamag.com/2018/10/08/lionfish-pretty-but-dangerous-1/" target="_blank" class="link-card">
+          <a href="https://payamag.com/2018/10/08/lionfish-pretty-but-dangerous-1/" target="_blank" rel="noopener noreferrer" class="link-card">
             <h3>Paya Magazine</h3>
             <p>Lionfish article feature.</p>
           </a>
@@ -319,9 +253,7 @@
 
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 WWMSID. All Rights Reserved.</p>
-  </footer>
+  <footer><div class="footer-inner"><div><p class="footer-brand">WWMSID</p><p>What Would My Scuba Instructor Do?</p><p class="footer-note">The diving photographs, books &amp; experiences of Christopher Willey.</p></div><div><nav class="footer-links" aria-label="Footer navigation"><a href="aboutme.html#certifications">Credentials</a><a href="index.html#media">In the media</a><a href="contact.html">Get in touch</a><a href="crypto.html">WWMSID Tokens</a><a href="https://www.facebook.com/WWMSID/" target="_blank" rel="noopener noreferrer">Facebook</a></nav><p class="footer-note">&copy; 2025 WWMSID. All Rights Reserved.</p></div></div></footer>
 
   <script src="script.js"></script>
 

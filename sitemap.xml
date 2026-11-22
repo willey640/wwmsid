@@ -1,47 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.wwmsid.ca/</loc>
-  <lastmod>2025-04-10T00:24:47+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.wwmsid.ca/index.html</loc>
-  <lastmod>2025-04-10T00:24:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.wwmsid.ca/store.html</loc>
-  <lastmod>2025-04-10T00:24:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.wwmsid.ca/gallery.html</loc>
-  <lastmod>2025-04-10T00:24:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.wwmsid.ca/aboutme.html</loc>
-  <lastmod>2025-04-10T00:24:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.wwmsid.ca/crypto.html</loc>
-  <lastmod>2025-04-10T00:24:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.wwmsid.ca/contact.html</loc>
-  <lastmod>2025-04-10T00:24:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.wwmsid.ca/</loc></url>
+  <url><loc>https://www.wwmsid.ca/aboutme.html</loc></url>
+  <url><loc>https://www.wwmsid.ca/gallery.html</loc></url>
+  <url><loc>https://www.wwmsid.ca/books.html</loc></url>
+  <url><loc>https://www.wwmsid.ca/stories.html</loc></url>
+  <url><loc>https://www.wwmsid.ca/video.html</loc></url>
+  <url><loc>https://www.wwmsid.ca/store.html</loc></url>
+  <url><loc>https://www.wwmsid.ca/contact.html</loc></url>
+  <url><loc>https://www.wwmsid.ca/crypto.html</loc></url>
 </urlset>

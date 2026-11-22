@@ -174,7 +174,7 @@ a {
 .gallery-hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
-    url("Photos/gallery-hero.jpg");
+    url("assets/photos/hero-1600.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -182,7 +182,7 @@ a {
 .contact-hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.7)),
-    url("Photos/contact-hero.jpg");
+    url("assets/photos/hero-1600.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -531,7 +531,7 @@ a {
 .final-cta {
   background:
     linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.78)),
-    url("Photos/cta-dive.jpg");
+    url("assets/photos/hero-1600.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -688,7 +688,7 @@ footer p {
 .store-hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.72)),
-    url("Photos/store-hero.jpg");
+    url("assets/photos/hero-1600.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -796,7 +796,7 @@ footer p {
 .about-hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.72)),
-    url("Photos/about-hero.jpg");
+    url("assets/photos/hero-1600.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -919,7 +919,7 @@ footer p {
 .videos-hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.72)),
-    url("Photos/videos-hero.jpg");
+    url("assets/photos/hero-1600.jpg");
   background-size: cover;
   background-position: center;
 }
